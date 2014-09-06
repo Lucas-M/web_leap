@@ -1,0 +1,14 @@
+Selecting previously unselected package leap.
+(Reading database ... 322201 files and directories currently installed.)
+Preparing to unpack Leap-2.1.2+21921-x86.deb ...
+Unpacking leap (2.1.2+21921) ...
+Setting up leap (2.1.2+21921) ...
+Leap Motion installed under /usr/bin and /usr/sbin
+leapd start/running, process 11521
+Check Leap Motion daemon with:
+  service leapd status
+Open the Leap Motion GUI with:
+  LeapControlPanel
+See /usr/share/Leap/README.linux for more information.
+Processing triggers for ureadahead (0.100.0-16) ...
+
