@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./favicon.png">
+    <title>Leap Web Site</title>
+    <!-- You should update these links to point to your local files! -->
+ 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://wilkesalex.github.io/leapstrap/dist/css/leapstrap.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="http://wilkesalex.github.io/leapstrap/examples/leap-web-site/example.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//js.leapmotion.com/0.3.0-beta3/leap.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body onload='draw("project1_canvas")'>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">webLeap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Project 1</h1>
+        <p>In the canvas below, push on the button to rotate the plane about it's x-axis.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Canvas area -->
+      <div class="row">
+        <div class="col-md-10">
+          <canvas id="project1_canvas" width="200" height="200">
+          <!-- <canvas id="project1_canvas"> -->
+            
+          </canvas>
+          <p><a class="btn btn-default leap-interactive" href="#" role="button">Push Me</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; deepSnit 2014</p>
+      </footer>
+    </div> <!-- /container -->
+<script src="//wilkesalex.github.io/leapstrap/dist/js/leapstrap.js"></script>
+<script>
+    LeapManager.init({
+        enableMetaGestures: true,
+        enableDefaultMetaGestureActions: true,
+        maxCursors:1,
+        enableHoverTap: true,
+        enablePressDown: true,
+        enableScrollbarScrolling: true,
+    });
+
+    // var gl;
+
+    // function draw(canvas) {
+    //     console.log("CANVAS: " + canvas);
+    //     var canvas = document.getElementById(canvas);
+    //     gl = initWebGl(canvas);
+
+    //     if (gl) {
+    //         gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    //         gl.enable(gl.DEPTH_TEST);
+    //         gl.depthFunc(gl.LEQUAL);
+    //         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    //     }
+    // }
+
+    // function initWebGl(canvas) {
+    //     gl = null;
+
+    //     try {
+    //         // Try to grab the standard context. If it fails, fallback to experimental.
+    //         gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+    //     }
+    //     catch(e) {}
+
+    //     // If we don't have a GL context, give up now
+    //     if (!gl) {
+    //         alert("Unable to initialize WebGL. Your browser may not support it.");
+    //         gl = null;
+    //     }
+    //     return gl;
+    // }
+
+      // function draw(){
+      //   var canvas = document.getElementById('project1_canvas');
+      //   if (canvas.getContext){
+      //     var ctx = canvas.getContext('webgl');
+      //     ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+      //     ctx.fillRect (5, 5, 190, 190);
+      //   }
+      // }
+</script>
+</body>
+</html>
+
